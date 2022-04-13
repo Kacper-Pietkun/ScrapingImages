@@ -1,0 +1,34 @@
+{
+	"runs": [
+		{ 
+			"spider_name": "all_spiders",
+			"category": "glass",
+			"keyword": "jar",
+			"size": "5"
+		},
+		{
+			"spider_name": "all_spiders",
+			"category": "paper",
+			"keyword": "carton",
+			"size": "5"
+		},
+		{
+			"spider_name": "all_spiders",
+			"category": "plastic_metal",
+			"keyword": "plastic bottle",
+			"size": "5"
+		},
+		{
+			"spider_name": "all_spiders",
+			"category": "bio",
+			"keyword": "banana peel",
+			"size": "5"
+		},
+		{
+			"spider_name": "all_spiders",
+			"category": "mixed",
+			"keyword": "porcelain",
+			"size": "5"
+		}
+	]
+}
