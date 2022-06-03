@@ -1,34 +1,23 @@
 {
 	"runs": [
 		{ 
-			"spider_name": "all_spiders",
-			"category": "glass",
-			"keyword": "jar",
-			"size": "5"
-		},
-		{
-			"spider_name": "all_spiders",
-			"category": "paper",
-			"keyword": "carton",
-			"size": "5"
-		},
-		{
-			"spider_name": "all_spiders",
+			"spider_name": "bing_keyword_trash",
 			"category": "plastic_metal",
-			"keyword": "plastic bottle",
-			"size": "5"
+			"keywords": "can;bubble wrapper",
+			"size": "2"
 		},
-		{
-			"spider_name": "all_spiders",
-			"category": "bio",
-			"keyword": "banana peel",
-			"size": "5"
+		{ 
+			"spider_name": "unsplash_keyword_trash",
+			"category": "paper",
+			"keywords": "notebook;newspaper",
+			"size": "2"
 		},
-		{
-			"spider_name": "all_spiders",
-			"category": "mixed",
-			"keyword": "porcelain",
-			"size": "5"
+		{ 
+			"spider_name": "bing_image_trash",
+			"category": "glass",
+			"urls": "https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_RCfUHhYSfz8ECqfhcJCdZf1y.0dz.....9w*ccid_J9QeFhJ%2F&form=SBIIRP&iss=SBIUPLOADGET&sbisrc=ImgPicker&idpbck=1&sbifsz=3000+x+4000+%c2%b7+119.11+kB+%c2%b7+jpeg&sbifnm=041fc367-b85e-469a-9313-26ed99cb3c78.jpg&thw=3000&thh=4000&ptime=372&dlen=162620&expw=519&exph=692&selectedindex=0&id=-518979532&ccid=J9QeFhJ%2F&vt=2&sim=1;https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_RIauQbwunT8ECqfhcJCdZf1y.0dz.....zw*ccid_hq5BvC6d&form=SBIIRP&iss=SBIUPLOADGET&sbisrc=ImgPicker&idpbck=1&sbifsz=960+x+1280+%c2%b7+39.18+kB+%c2%b7+jpeg&sbifnm=aaaa.jpg&thw=960&thh=1280&ptime=35&dlen=53496&expw=519&exph=692&selectedindex=0&id=-1933236209&ccid=hq5BvC6d&vt=2&sim=1",
+			"size": "3"
 		}
+		
 	]
 }

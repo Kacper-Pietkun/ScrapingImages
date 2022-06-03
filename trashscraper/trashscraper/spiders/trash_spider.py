@@ -11,23 +11,22 @@ class TrashSpider(scrapy.Spider):
             '''
             *******************************************
             TRASH SPIDER SEARCHING FOR:
-            category: {0}
-            keyword: {1}
+            spider name: {0}
+            category: {1}
             number of photos: {2}
-            *******************************************
-            '''.format(self.category, self.keyword, self.size))
+            '''.format(self.name, self.category, self.size))
         except Exception as e:
-            print("MISSING ARGUMENTS: ", e)
-            return
+            print(e)
+            raise ValueError("MISSING ARGUMENTS!")
 
-        self.size = int(self.size)
+        
         if self.category_validation() is False:
-            print("INVALID CATEGORY: ")
-            return
+            print("category doesn't match any folder")
+            raise ValueError("INVALID CATEGORY!")
 
         if self.number_of_photos_validation() is False:
-            print("INVALID SIZE: ")
-            return
+            print("Size must be greater or equal to 0")
+            raise ValueError("INVALID SIZE!")
 
     # Allowed categories are equal to the classes of trash
     def category_validation(self):
@@ -37,5 +36,11 @@ class TrashSpider(scrapy.Spider):
             self.category == 'glass' or \
             self.category == 'bio'
 
+    # size 0 means it will load every image from the page
     def number_of_photos_validation(self):
-        return self.size > 0
+        try:
+            self.size = int(self.size)
+        except ValueError as e:
+            print(e)
+            raise ValueError("Size cannot be converted to int")
+        return self.size >= 0
